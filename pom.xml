@@ -3,10 +3,6 @@
 		 xmlns="http://maven.apache.org/POM/4.0.0"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<modules>
-		<module>aster-cloud-starters-dependencies</module>
-		<module>aster-cloud-starter-gateway-dynamic</module>
-	</modules>
 	<parent>
 		<groupId>com.github.wangqian-projects</groupId>
 		<artifactId>aster-cloud-build</artifactId>
@@ -22,12 +18,17 @@
 
 	<url>https://github.com/wangqian-projects/aster-cloud-starters</url>
 
+	<modules>
+		<module>aster-cloud-starters-dependencies</module>
+		<module>aster-cloud-starter-dynamic-gateway</module>
+	</modules>
+
 	<dependencyManagement>
 		<dependencies>
 			<!-- commons 核心类 -->
 			<dependency>
 				<groupId>com.github.wangqian-projects</groupId>
-				<artifactId>aster-cloud-starter-gateway-dynamic</artifactId>
+				<artifactId>aster-cloud-starter-dynamic-gateway</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>

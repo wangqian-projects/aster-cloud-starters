@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>aster-cloud-starter-gateway-dynamic</artifactId>
+    <artifactId>aster-cloud-starter-dynamic-gateway</artifactId>
 
 
 </project>
