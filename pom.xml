@@ -21,6 +21,7 @@
 	<modules>
 		<module>aster-cloud-starters-dependencies</module>
 		<module>aster-cloud-starter-dynamic-gateway</module>
+		<module>aster-cloud-starter-xxl-job</module>
 	</modules>
 
 	<dependencyManagement>

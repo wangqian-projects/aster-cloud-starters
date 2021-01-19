@@ -15,4 +15,15 @@
     <description>Aster Cloud Starters Dependencies</description>
 
     <packaging>pom</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- xxl job starter -->
+            <dependency>
+                <groupId>com.github.wangqian-projects</groupId>
+                <artifactId>aster-cloud-starter-xxl-job</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
