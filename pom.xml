@@ -23,7 +23,8 @@
 		<module>aster-cloud-starter-dynamic-gateway</module>
 		<module>aster-cloud-starter-uid-generator</module>
 		<module>aster-cloud-starter-xxl-job</module>
-	</modules>
+        <module>aster-cloud-starter-web</module>
+    </modules>
 
 	<dependencyManagement>
 		<dependencies>
@@ -32,8 +33,11 @@
 				<groupId>com.github.wangqian-projects</groupId>
 				<artifactId>aster-cloud-commons-dependencies</artifactId>
 				<version>${project.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
 
 </project>

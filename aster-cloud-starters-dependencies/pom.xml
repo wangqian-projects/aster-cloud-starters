@@ -21,6 +21,13 @@
             <!-- uid-generator starter -->
             <dependency>
                 <groupId>com.github.wangqian-projects</groupId>
+                <artifactId>aster-cloud-starter-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- uid-generator starter -->
+            <dependency>
+                <groupId>com.github.wangqian-projects</groupId>
                 <artifactId>aster-cloud-starter-uid-generator</artifactId>
                 <version>${project.version}</version>
             </dependency>
