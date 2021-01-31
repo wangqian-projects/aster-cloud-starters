@@ -1,7 +1,7 @@
 package com.baidu.fsg.uid;
 
 import com.baidu.fsg.uid.impl.DefaultUidGenerator;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang.StringUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

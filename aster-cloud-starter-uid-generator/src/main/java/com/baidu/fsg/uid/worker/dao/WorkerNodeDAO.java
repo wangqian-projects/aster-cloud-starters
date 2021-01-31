@@ -16,17 +16,15 @@
 package com.baidu.fsg.uid.worker.dao;
 
 import com.baidu.fsg.uid.worker.entity.WorkerNodeEntity;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 /**
  * DAO for M_WORKER_NODE
  *
  * @author yutianbao
  */
-@Repository
-public interface WorkerNodeDAO extends BaseMapper<WorkerNodeEntity> {
+public interface WorkerNodeDAO {
 
     /**
      * Get {@link WorkerNodeEntity} by node host

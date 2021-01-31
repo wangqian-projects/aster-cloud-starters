@@ -15,68 +15,117 @@
  */
 package com.baidu.fsg.uid.worker.entity;
 
-import com.baidu.fsg.uid.worker.WorkerNodeType;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.extension.activerecord.Model;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.experimental.Accessors;
-
 import java.util.Date;
+
+import org.apache.commons.lang.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
+
+import com.baidu.fsg.uid.worker.WorkerNodeType;
 
 /**
  * Entity for M_WORKER_NODE
  *
  * @author yutianbao
  */
-@Data
-@EqualsAndHashCode(callSuper = true)
-@Accessors(chain = true)
-@TableName("WORKER_NODE")
-public class WorkerNodeEntity extends Model {
+public class WorkerNodeEntity {
 
     /**
      * Entity unique id (table unique)
      */
-    @TableId(value = "ID", type = IdType.AUTO)
     private long id;
 
     /**
      * Type of CONTAINER: HostName, ACTUAL : IP.
      */
-    @TableField("HOST_NAME")
     private String hostName;
 
     /**
      * Type of CONTAINER: Port, ACTUAL : Timestamp + Random(0-10000)
      */
-    @TableField("PORT")
     private String port;
 
     /**
      * type of {@link WorkerNodeType}
      */
-    @TableField("TYPE")
     private int type;
 
     /**
      * Worker launch date, default now
      */
-    @TableField("LAUNCH_DATE")
     private Date launchDate = new Date();
 
     /**
      * Created time
      */
-    @TableField("MODIFIED")
     private Date created;
 
     /**
      * Last modified
      */
-    @TableField("CREATED")
     private Date modified;
+
+    /**
+     * Getters & Setters
+     */
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getHostName() {
+        return hostName;
+    }
+
+    public void setHostName(String hostName) {
+        this.hostName = hostName;
+    }
+
+    public String getPort() {
+        return port;
+    }
+
+    public void setPort(String port) {
+        this.port = port;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public Date getLaunchDate() {
+        return launchDate;
+    }
+
+    public void setLaunchDateDate(Date launchDate) {
+        this.launchDate = launchDate;
+    }
+
+    public Date getCreated() {
+        return created;
+    }
+
+    public void setCreated(Date created) {
+        this.created = created;
+    }
+
+    public Date getModified() {
+        return modified;
+    }
+
+    public void setModified(Date modified) {
+        this.modified = modified;
+    }
+
+    @Override
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+    }
+
 }
