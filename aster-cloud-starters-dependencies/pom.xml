@@ -32,6 +32,13 @@
                 <version>${project.version}</version>
             </dependency>
 
+            <!-- swagger starter -->
+            <dependency>
+                <groupId>com.github.wangqian-projects</groupId>
+                <artifactId>aster-cloud-starter-swagger</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!-- xxl job starter -->
             <dependency>
                 <groupId>com.github.wangqian-projects</groupId>

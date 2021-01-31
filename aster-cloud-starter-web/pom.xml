@@ -22,7 +22,12 @@
             <groupId>com.github.wangqian-projects</groupId>
             <artifactId>aster-cloud-commons-feign</artifactId>
         </dependency>
-        <!--web模块-->
+        <!--aster cloud swagger starter-->
+        <dependency>
+            <groupId>com.github.wangqian-projects</groupId>
+            <artifactId>aster-cloud-starter-swagger</artifactId>
+        </dependency>
+        <!--spring web starter-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

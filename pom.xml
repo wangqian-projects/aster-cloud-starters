@@ -21,6 +21,7 @@
 	<modules>
 		<module>aster-cloud-starters-dependencies</module>
 		<module>aster-cloud-starter-dynamic-gateway</module>
+		<module>aster-cloud-starter-swagger</module>
 		<module>aster-cloud-starter-uid-generator</module>
 		<module>aster-cloud-starter-xxl-job</module>
         <module>aster-cloud-starter-web</module>
@@ -28,6 +29,14 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- aster cloud commons 依赖 -->
+			<dependency>
+				<groupId>com.github.wangqian-projects</groupId>
+				<artifactId>aster-cloud-starters-dependencies</artifactId>
+				<version>${project.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 			<!-- aster cloud commons 依赖 -->
 			<dependency>
 				<groupId>com.github.wangqian-projects</groupId>
