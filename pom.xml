@@ -21,15 +21,16 @@
 	<modules>
 		<module>aster-cloud-starters-dependencies</module>
 		<module>aster-cloud-starter-dynamic-gateway</module>
+		<module>aster-cloud-starter-uid-generator</module>
 		<module>aster-cloud-starter-xxl-job</module>
 	</modules>
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- commons 核心类 -->
+			<!-- aster cloud commons 依赖 -->
 			<dependency>
 				<groupId>com.github.wangqian-projects</groupId>
-				<artifactId>aster-cloud-starter-dynamic-gateway</artifactId>
+				<artifactId>aster-cloud-commons-dependencies</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>

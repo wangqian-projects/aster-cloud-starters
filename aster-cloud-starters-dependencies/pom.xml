@@ -18,6 +18,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- uid-generator starter -->
+            <dependency>
+                <groupId>com.github.wangqian-projects</groupId>
+                <artifactId>aster-cloud-starter-uid-generator</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!-- xxl job starter -->
             <dependency>
                 <groupId>com.github.wangqian-projects</groupId>
