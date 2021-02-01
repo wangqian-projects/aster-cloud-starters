@@ -20,16 +20,16 @@
 
 	<modules>
 		<module>aster-cloud-starters-dependencies</module>
-		<module>aster-cloud-starter-dynamic-gateway</module>
+		<module>aster-cloud-starter-feign</module>
 		<module>aster-cloud-starter-swagger</module>
 		<module>aster-cloud-starter-uid-generator</module>
 		<module>aster-cloud-starter-xxl-job</module>
-        <module>aster-cloud-starter-web</module>
-    </modules>
+		<module>aster-cloud-starter-web</module>
+	</modules>
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- aster cloud commons 依赖 -->
+			<!-- aster cloud starters 依赖 -->
 			<dependency>
 				<groupId>com.github.wangqian-projects</groupId>
 				<artifactId>aster-cloud-starters-dependencies</artifactId>

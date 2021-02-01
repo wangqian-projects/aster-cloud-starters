@@ -1,4 +1,4 @@
-package com.aster.cloud.web.remote;
+package com.aster.cloud.web.feign;
 
 import com.aster.cloud.web.constant.ServiceNameConstants;
 import org.springframework.cloud.openfeign.FeignClient;

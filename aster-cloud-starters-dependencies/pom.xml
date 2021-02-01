@@ -32,6 +32,13 @@
                 <version>${project.version}</version>
             </dependency>
 
+            <!-- feign starter -->
+            <dependency>
+                <groupId>com.github.wangqian-projects</groupId>
+                <artifactId>aster-cloud-starter-feign</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!-- swagger starter -->
             <dependency>
                 <groupId>com.github.wangqian-projects</groupId>

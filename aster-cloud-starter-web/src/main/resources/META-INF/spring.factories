@@ -1,6 +1,6 @@
 # 配置 feignClient 的全类名路径，多个 feignClient 用“,\” 分割
-com.aster.cloud.commons.feign.AsterFeignAutoConfiguration=\
-  com.aster.cloud.web.remote.IdGeneratorRemoteApi
+com.aster.cloud.feign.AsterFeignAutoConfiguration=\
+  com.aster.cloud.web.feign.IdGeneratorRemoteApi
 
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
     com.aster.cloud.web.WebAutoConfiguration

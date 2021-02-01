@@ -20,7 +20,7 @@
         <!--feign 依赖-->
         <dependency>
             <groupId>com.github.wangqian-projects</groupId>
-            <artifactId>aster-cloud-commons-feign</artifactId>
+            <artifactId>aster-cloud-starter-feign</artifactId>
         </dependency>
         <!--aster cloud swagger starter-->
         <dependency>

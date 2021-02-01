@@ -1,7 +1,7 @@
 package com.aster.cloud.web.util;
 
 import com.aster.cloud.commons.core.SpringContextHolder;
-import com.aster.cloud.web.remote.IdGeneratorRemoteApi;
+import com.aster.cloud.web.feign.IdGeneratorRemoteApi;
 
 /**
  * @author 王骞
